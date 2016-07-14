@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>找回密码</title>
+<link rel="stylesheet" type="text/css" href="css/public.css"/>
+<link rel="stylesheet" type="text/css" href="css/xindex.css"/>
+</head>
+
+<body>
+<!--=S header start-->
+<div id="top">
+    <div id="header" class="s-header">
+        <div class="logo">
+            <img src="images/h_school/logo.png" alt="logo" width="451" height="62" />
+        </div>
+        <div class="login-box"> 
+          <!--登录前--> 
+         <div class="zhuc f-right" style="display:none;">
+                <a href="javascript:;" id="x-login">登录</a>
+                |
+                <a href="javascript:;" id="zc-login">注册</a>
+           </div>
+           <!--登录后-->
+           <div class="zhuc-ok f-right" style="display:block;">
+                 <div class="zhuc-topmenu">
+                    <span class="zhuc-info">您好，张三李四</span>
+                    <a href="javascript:;">应用管理</a>
+                    |
+                    <a href="javascript:;">新消息2</a>
+                    |
+                    <a href="javascript:;">我的备忘</a>
+                    |
+                    <a href="javascript:;">我的收藏</a>
+                    |
+                    <a href="javascript:;">我的关注</a>
+                    |
+                    <a href="javascript:;">退出</a>
+                </div>
+           </div>
+           <!--登录后结束-->
+           <div class="search-box f-right">
+                <input type="text" class="q" id="q" value="搜索课程..." />
+                <button type="submit" id="searchButton"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div id="menu">
+            <a href="高中选修课_首页.html" class="current">首&nbsp;&nbsp;页</a>
+            <a href="高中选修课_课程中心.html">课程中心</a>
+            <a href="高中选修课_市县分平台.html">市县分平台</a>
+            <a href="高中选修课_教师风采.html">教师风采</a>
+            <a href="高中选修课_答疑交流.html">答疑交流</a>
+            <a href="http://zhejiang.icourses.cn/cuoc/" target="blank">国家课程</a>
+            <a href="高中选修课_帮助中心.html">帮助中心</a>
+            <a href="高中选修课_在线答疑.html">在线答疑</a>
+    </div>
+</div>
+<!--=E header end-->
+<!--=S container start-->
+<div id="container" class="s-container">
+    <div class="find-pwdBox">
+              <p class="find-pwd-dt">找回用户名和密码（只支持学生账户）</p>
+               <!--验证身份--><img src="images/index/find_pwd2.gif" class="find-pwd-img">
+              <!--重置密码图片<img src="images/index/find_pwd3.gif" class="find-pwd-img">-->
+              <!--完成图片<img src="images/index/find_pwd4.gif" class="find-pwd-img">-->
+              <!--输入用户名-->
+
+                <!--验证身份-->
+                <table border="0" cellspacing="0" cellpadding="0" class="find-pwd-table" id="skip2" style="display:block;">
+                      <tbody>
+                        <tr>
+                            <td class="tt">姓名</td>
+                            <td><input type="text" value="" class="input-txt"></td>
+                        </tr>
+                        <tr>
+                            <td class="tt">所在学校</td>
+                            <td>
+                                <select><option>杭州市</option></select>
+                                <select><option>===请选择===</option></select>
+                                <select id="regions3" name="unitId" style="width:190px"><option value="">======请选择======</option><option value="FF808081362EE5D401362F37E49B0009" title="演示单位">演示单位</option><option value="AAAAAAAAAAAAAAAAAAAAAAAAA-xx6441" title="杭州外国语学校">杭州外国语学校</option><option value="AAAAAAAAAAAAAAAAAAAAAAAAA-xx6502" title="浙江省教育厅教研室">浙江省教育厅教研室</option><option value="AAAAAAAAAAAAAAAAAAAAAAAA-xx10050" title="浙江省教育技术中心">浙江省教育技术中心</option><option value="AAAAAAAAAAAAAAAAAAAAAAAA-xx10801" title="浙江省教育科学研究院">浙江省教育科学研究院</option><option value="AAAAAAAAAAAAAAAAAAAAAAAA-xx13160" title="浙江省教育科学研究院">浙江省教育科学研究院</option></select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tt">身份证号码</td>
+                            <td><input type="text" value="" class="input-txt"></td>
+                        </tr>
+                        <tr>
+                            <td class="tt">&nbsp;</td>
+                            <td><input type="button" value="下一步" class="input-btn" id="btnSkip2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--重置密码-->
+                <table border="0" cellspacing="0" cellpadding="0" class="find-pwd-table" id="skip3" style="display:none;">
+                    <tbody>
+                            <tr>
+                                <td class="tt">新密码</td>
+                                <td><input type="text" value="" class="input-txt"></td>
+                            </tr>
+                            <tr>
+                                <td class="tt">&nbsp;</td>
+                                <td>
+                                    <div class="pwd-save">
+                                        <span class="active">弱</span>
+                                        <span>中</span>
+                                        <span>强</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tt">再次输入</td>
+                                <td><input type="text" value="" class="input-txt"></td>
+                            </tr>
+                            <tr>
+                                <td class="tt">&nbsp;</td>
+                                <td><input type="button" value="提交" class="input-btn" id="btnSkip3"></td>
+                            </tr>
+                    </tbody>
+                </table>
+                <!--注册完成-->
+                <table border="0" cellspacing="0" cellpadding="0" class="find-pwd-table" id="skip4" style="display:none;">
+                    <tbody>
+                        <tr>
+                            <td class="find-pwd-ok">恭喜您，密码成功设置！您可以使用新密码登录!</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><input type="button" value="马上登录" class="input-btn"></td>
+                        </tr>
+                    </tbody>
+                </table>
+    </div>
+</div>
+<div class="clr"></div>
+<div id="footer"> 
+    <div id="footer-nav"> 
+          <div class="footer-left">
+              <div class="foot-nav">
+                  <a href="/estudy/help/helpCenter.action">帮助中心</a>
+              |  <a href="/estudy/index/homePage/homePage.action?typeIndex=2" target="_blank">作者声明</a>
+              |  <a href="/estudy/index/homePage/homePage.action?typeIndex=3" target="_blank">联系我们</a>
+                  |  <a href="/estudy/expertUser/login.action">专家账户登录</a>
+                  |  <a href="/estudy/estudyLogin.action?loginType=5">后台管理</a>
+                </div>
+              <div class="foot-nav">
+                 <a href="">浙江省教育厅</a>
+                 <a href="">浙江省教育技术中心</a>
+                 <a href="">浙江教育资源网</a>
+                 <a href="">浙江职业教育资源网</a>                 
+              </div>
+          </div>
+         
+          <div class="footer-right"> 
+              <img src="images/footer-logo.png">
+              <p class="banq"><span class="txt">CopyRight 2012-2015 版权所有</span><a href="http://www.cnzz.com/stat/website.php?web_id=4497361" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic.gif"></a></p>
+          </div>
+    </div>
+</div>
+<div id="cbbfixed">
+   <!-- <a id="gotop" class="cbbtn" href="#" hidefocus="true"><span class="yy-icon yy-gt"></span></a>-->
+  <a class="cweixin cbbtn" href="javascript:void;">
+     <span class="weixin-icon"></span>
+     <div></div>
+  </a>
+  <a id="gotop" class="cbbtn" href="">
+        <span class="yy-icon yy-gt" style="display:none;"></span>
+  </a>
+</div>
+<!--=E footer end-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/coursemyscript.js"></script>
+<script type="text/javascript" src="js/myscript-chkRadio.js"></script>
+</body>
+</html>
