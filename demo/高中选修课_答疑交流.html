@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>高中选修课_课程详情页</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/xindex.css" />
+</head>
+
+<body>
+    <!--=S header start-->
+    <div id="top">
+        <div id="header" class="s-header">
+            <div class="logo">
+                <img src="images/h_school/logo.png" alt="logo" width="451" height="62" />
+            </div>
+            <div class="login-box">
+                <!--登录前-->
+                <div class="zhuc f-right" style="display:none;">
+                    <a href="javascript:;" id="x-login">登录</a> |
+                    <a href="javascript:;" id="zc-login">注册</a>
+                </div>
+                <!--登录后-->
+                <div class="zhuc-ok f-right" style="display:block;">
+                    <div class="zhuc-topmenu">
+                        <span class="zhuc-info">您好，张三李四</span>
+                        <a href="javascript:;">应用管理</a> |
+                        <a href="javascript:;">新消息2</a> |
+                        <a href="javascript:;">我的备忘</a> |
+                        <a href="javascript:;">我的收藏</a> |
+                        <a href="javascript:;">我的关注</a> |
+                        <a href="javascript:;">退出</a>
+                    </div>
+                </div>
+                <!--登录后结束-->
+                <div class="search-box f-right">
+                    <input type="text" class="q" id="q" value="搜索课程..." />
+                    <button type="submit" id="searchButton"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div id="menu">
+            <a href="高中选修课_首页.html">首&nbsp;&nbsp;页</a>
+            <a href="高中选修课_课程中心.html">课程中心</a>
+            <a href="高中选修课_市县分平台.html">市县分平台</a>
+            <a href="高中选修课_教师风采.html">教师风采</a>
+            <a href="高中选修课_答疑交流.html" class="current">答疑交流</a>
+            <a href="http://zhejiang.icourses.cn/cuoc/" target="blank">国家课程</a>
+            <a href="高中选修课_帮助中心.html">帮助中心</a>
+            <a href="高中选修课_在线答疑.html">在线答疑</a>
+        </div>
+    </div>
+    <!--=E header end-->
+    <!--=S container start-->
+    <div id="container" class="k-container">
+        <div class="forum-container">
+            <div class="forum-hd">
+                <p><span class="time">&nbsp;</span></p>
+                <div class="search-in">
+                    <form name="searchForm" method="post" id="searchForm">
+                        <input class="inputxt" type="text" id="topicTitle" name="topicTitle" value="">
+                        <input class="input-btn" type="submit" id="searchButton" onclick="topicClick();" value="搜索">
+                    </form>
+                </div>
+                <div class="breadcrumbs"><a href="/forum/forumHome.action">论坛首页</a></div>
+                <div class="clr"></div>
+            </div>
+            <!--/forum-hd-->
+            <div class="forum-bd">
+                <div class="news-wrapper panel-wrapper">
+                    <div class="bzzx panel">
+                        <div class="panel-hd">
+                            <h3>本周之星</h3></div>
+                        <div class="panel-bd">
+                            <div class="switch-wrapper">
+                                <ul class="switch-content-box">
+                                    <li class="switch-content current" id="switch_content_1">
+                                        <div class="simple-intro">
+                                            <div class="imgbox">
+                                                <a href="#"><img width="90" height="90" alt="" src="images/picture1.jpg" onerror="this.src='images/forum/avatar_sample.gif'"></a>
+                                            </div>
+                                            <h4><a href="#">冯泽法</a> <img class="icon" alt="" src="images/forum/icon01.gif" width="22" height="22"></h4>
+                                            <p>杭州师范大学附属中学
+                                                <br>发帖数：<span class="number">2</span></p>
+                                        </div>
+                                        <p class="clr">最新帖：
+                                            <a href="/forum/forumPostList.action?topicId=402892F9507336E901507AC08CDC0076&amp;panelId=D7512E4C9874074EE043C0A80E03074E" title="为什么下载按钮取消了？">为什么下载按钮取消了？</a>
+                                        </p>
+                                    </li>
+                                    <li class="switch-content" id="switch_content_2">
+                                        <div class="simple-intro">
+                                            <div class="imgbox">
+                                                <a href="#"><img width="90" height="90" alt="" src="images/picture1.jpg" onerror="this.src='images/forum/avatar_sample.gif'"></a>
+                                            </div>
+                                            <h4><a href="#">叶裕红</a> <img class="icon" alt="" src="images/forum/icon01.gif" width="22" height="22"></h4>
+                                            <p>宁波市鄞州区咸祥中学
+                                                <br>发帖数：<span class="number">1</span></p>
+                                        </div>
+                                        <p class="clr">最新帖：
+                                            <a href="/forum/forumPostList.action?topicId=402892F9507336E90150804B2E5B0099&amp;panelId=402892F846AAB70C0146C74CB2FB1F44" title="真的不错,点赞一下">真的不错,点赞一下</a>
+                                        </p>
+                                    </li>
+                                    <li class="switch-content" id="switch_content_3">
+                                        <div class="simple-intro">
+                                            <div class="imgbox">
+                                                <a href="#"><img width="90" height="90" alt="" src="images/picture1.jpg" onerror="this.src='images/forum/avatar_sample.gif'"></a>
+                                            </div>
+                                            <h4><a href="#">饶君林</a> <img class="icon" alt="" src="images/forum/icon01.gif" width="22" height="22"></h4>
+                                            <p>长兴金陵高级中学
+                                                <br>发帖数：<span class="number">0</span></p>
+                                        </div>
+                                        <p class="clr">最新帖： （暂无新帖）
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="switch-control-panel">
+                                    <ul class="switch-control-btn">
+                                        <li><a class="current" href="#switch_content_1">1</a></li>
+                                        <li><a href="#switch_content_2" class="">2</a></li>
+                                        <li><a href="#switch_content_3" class="">3</a></li>
+                                    </ul>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                            <!--/switch-wrapper-->
+                        </div>
+                    </div>
+                    <!--/bzzx-->
+                    <div class="zxjh panel">
+                        <div class="panel-hd">
+                            <h3>最新精华</h3> <a class="readmore" href="/forum/getAhtTopicsList.action?topicsMarked=3">更多&gt;&gt;</a></div>
+                        <div class="panel-bd">
+                            <ul>
+                                <li><a href="/forum/forumPostList.action?topicId=402892FB504C891901504C9578D50002&amp;panelId=402892FB4F9B28B5014FB527C0330CA3" title="当代谁能坐上散文文坛的第一把交椅">当代谁能坐上散文文坛的第一把交...</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892F84E67EE0D014E6C8D07D2178D&amp;panelId=40288EF94095B9DE01409627106600C6" title="传说发帖可以加进度">传说发帖可以加进度</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892F84D7A83AF014E62D5390C1723&amp;panelId=40288EF94095B9DE014096D8157D01CA" title="坑人吗 到底要上多长时间">坑人吗 到底要上多长时间</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892F84D7A83AF014E62CF210B171D&amp;panelId=402892F84743771C0147C7E7869E0A8B" title="我应该是第一个学完的吧">我应该是第一个学完的吧</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892F84D7A83AF014E62A7A58216EF&amp;panelId=40288EF94095B9DE014096D8157D01CA" title="终于快上完了">终于快上完了</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892FA4CC2DEA1014CEA17253901A7&amp;panelId=40288EF94095B9DE014096CE2E6601C0" title="初三学生“数字故事”体验贴">初三学生“数字故事”体验贴</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892F9499DE5DB014A0975F6880CCB&amp;panelId=40288EF94095B9DE014096CE2E6601C0" title="《交易》">《交易》</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892F8499DE4D70149E56FED053F0B&amp;panelId=40288EF94095B9DE014096CE2E6601C0" title="用爱浇灌的树苗">用爱浇灌的树苗</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/zxjh-->
+                    <div class="zxzt panel">
+                        <div class="panel-hd">
+                            <h3>最新主题</h3> <a class="readmore" href="/forum/getAhtTopicsList.action?topicsMarked=1">更多&gt;&gt;</a></div>
+                        <div class="panel-bd">
+                            <ul>
+                                <li><a href="/forum/forumPostList.action?topicId=402892FB507334EF01508E9965BA012A&amp;panelId=BC3FFC6C4300E4C801431E11586F47BA" title="在学习过程中会有随机测试题，若超时回答，将停止计算学习时间。">在学习过程中会有随机测试题，若...</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892FB507334EF01508E98FF4A0128&amp;panelId=BC3FFC6C4300E4C801431E11586F47BA" title="在学习过程中会有随机测试题，若超时回答，将停止计算学习时间。">在学习过程中会有随机测试题，若...</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892FB507334EF01508E911FE60125&amp;panelId=BC3FFC6C4300E4C801431E11586F47BA" title="老师，为什么总说我未完成学习任务">老师，为什么总说我未完成学习任...</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892FA50736DE501508D537D12007A&amp;panelId=402892FC46AAB7670146B74B964F1A3B" title="为什么视频不能下载了，该怎么样才能下载？">为什么视频不能下载了，该怎么样...</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892F9507336E90150804B2E5B0099&amp;panelId=402892F846AAB70C0146C74CB2FB1F44" title="真的不错,点赞一下">真的不错,点赞一下</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892F9507336E901507AC08CDC0076&amp;panelId=D7512E4C9874074EE043C0A80E03074E" title="为什么下载按钮取消了？">为什么下载按钮取消了？</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892F8504C861F01506046C84A0255&amp;panelId=402892F946AAB6110146DB05DADE2313" title="第一章 素描艺术概论">第一章 素描艺术概论</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892F8504C861F01506010B9D0009C&amp;panelId=402892FA4FBAA417014FBCA225410330" title="新课程开启，欢迎各位老师同学参加交流！">新课程开启，欢迎各位老师同学参...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/zxzt-->
+                    <div class="rmzt panel">
+                        <div class="panel-hd">
+                            <h3>热门主题</h3> <a class="readmore" href="/forum/getAhtTopicsList.action?topicsMarked=2">更多&gt;&gt;</a></div>
+                        <div class="panel-bd">
+                            <ul>
+                                <li><a href="/forum/forumPostList.action?topicId=BC3FFC6C422430A701426F08652B0959&amp;panelId=40288EF94095B9DE0140962477DB00BA" title="旋飞">旋飞</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=BC3FFC6C3ABBC8F3013AD8C349811716&amp;panelId=BC3742660F520018E043C0A80A670018" title="学校什么电脑哦，鼠标点了1000多下">学校什么电脑哦，鼠标点了100...</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=40288EF941BCD5E10141BFD8DE070585&amp;panelId=40288EF94095B9DE0140962477DB00BA" title="怎么没进度！？">怎么没进度！？</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=BC3FFC6C41BFE2B30142080515051321&amp;panelId=40288EF94095B9DE0140962477DB00BA" title="秋蓬">秋蓬</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=BC3FFC6C4196C6710141BAED0FE11819&amp;panelId=40288EF94095B9DE014096A9B8BC0138" title="9班学术讨论">9班学术讨论</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=402892FC480CD514014834FCC85308A8&amp;panelId=40288EF94095B9DE014096CE2E6601C0" title="数字故事的特点">数字故事的特点</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=40288EF941BCD5E10142073A9B3C36C1&amp;panelId=D2EB540596C604A2E043C0A80E0304A2" title="二班学术讨论贴~~~">二班学术讨论贴~~~</a></li>
+                                <li><a href="/forum/forumPostList.action?topicId=BC3FFC6C422432270142372C92DC31B2&amp;panelId=40288EF94095B9DE014096B3330E015A" title="我要好好学习">我要好好学习</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/rmzt-->
+                    <div class="clr"></div>
+                </div>
+                <!--/news-wrapper-->
+                <div class="panel-wrapper">
+                    <!-- 含有子分类 -->
+                    <div class="panel-hd">
+                        <h2><a href="#">»学习答疑</a></h2></div>
+                    <div class="panel-bd">
+                        <table width="100%" class="data-table">
+                            <tbody>
+                                <tr>
+                                    <td class="zt">
+                                        <img class="icon" src="images/forum/folder_new.gif" width="32" height="23" alt="新文章">
+                                    </td>
+                                    <td class="bm">
+                                        <h3><a href="forumHomeOfCategory.action?id=00000000000000000000000000000101">知识拓展</a></h3> 知识拓展类课程学习的学生提问与老师答疑
+                                    </td>
+                                    <td class="zt">
+                                        <img class="icon" src="images/forum/folder.gif" width="32" height="23" alt="">
+                                    </td>
+                                    <td class="bm">
+                                        <h3><a href="forumHomeOfCategory.action?id=00000000000000000000000000000102">职业技能</a></h3> 职业技能类课程学习的学生提问与老师答疑
+                                    </td>
+                                    <td class="zt">
+                                        <img class="icon" src="images/forum/folder_new.gif" width="32" height="23" alt="新文章">
+                                    </td>
+                                    <td class="bm">
+                                        <h3><a href="forumHomeOfCategory.action?id=00000000000000000000000000000103">兴趣特长</a></h3> 兴趣特长类课程学习的学生提问与老师答疑
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="zt">
+                                        <img class="icon" src="images/forum/folder.gif" width="32" height="23" alt="">
+                                    </td>
+                                    <td class="bm">
+                                        <h3><a href="forumHomeOfCategory.action?id=00000000000000000000000000000104">综合实践</a></h3> 综合实践类课程学习的学生提问与老师答疑
+                                    </td>
+                                    <td class="zt">
+                                        <img class="icon" src="images/forum/folder.gif" width="32" height="23" alt="">
+                                    </td>
+                                    <td class="bm">
+                                        <h3><a href="forumHomeOfCategory.action?id=402892F94955EAD901498409D771043F">吾问无为谓吾问无为谓吾问无为谓吾问无为谓</a></h3> 吾问无为谓吾问无为谓吾问无为谓吾问无为谓的版面分类
+                                    </td>
+                                    <!-- 填上空白的 -->
+                                    <td class="zt">&nbsp;</td>
+                                    <td class="bm">&nbsp;
+                                    </td>
+                                </tr>
+                                <!-- 填上空白的 end -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--/panel-bd-->
+                    <!-- 没有子分类的 -->
+                    <div class="panel-hd">
+                        <h2><a href="#">»师生交流</a></h2></div>
+                    <div class="panel-bd">
+                        <table width="100%" class="data-table">
+                            <tbody>
+                                <tr>
+                                    <th class="zt" width="56">&nbsp;</th>
+                                    <th class="bm" width="45%">版面</th>
+                                    <th class="bz">版主</th>
+                                    <th class="zhut" width="80">主题</th>
+                                    <th class="wz" width="80">文章</th>
+                                    <th class="zhfb">最后发表</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--/panel-bd-->
+                    <!-- 没有子分类的 -->
+                    <div class="panel-hd">
+                        <h2><a href="#">»谈天说地</a></h2></div>
+                    <div class="panel-bd">
+                        <table width="100%" class="data-table">
+                            <tbody>
+                                <tr>
+                                    <th class="zt" width="56">&nbsp;</th>
+                                    <th class="bm" width="45%">版面</th>
+                                    <th class="bz">版主</th>
+                                    <th class="zhut" width="80">主题</th>
+                                    <th class="wz" width="80">文章</th>
+                                    <th class="zhfb">最后发表</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--/panel-bd-->
+                </div>
+                <!--/panel-wrapper-->
+            </div>
+            <!--/forum-bd-->
+            <div class="forum-bt">
+                <div class="kszxs panel-wrapper loader" href="forumHomeStatDate.action">
+                    <div class="panel-hd">
+                        <h2>统计数据</h2></div>
+                    <div class="panel-bd">
+                        <table class="data-table" width="100%">
+                            <tbody>
+                                <tr>
+                                    <th rowspan="2" width="56"><img class="icon" src="images/forum/whosonline.gif" width="46" height="25" alt="站内统计"></th>
+                                    <td>
+                                        目前总共发表了<a href="javascript:"> 43854 </a>篇文章，其中昨天有<a href="javascript:"> 0 </a>篇新文章
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        当前在线用户<a href="javascript:"> 15 </a>人
+                                        <br>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--/panel-bd-->
+                </div>
+                <!--/panel-wrapper-->
+                <div class="icon-tips">
+                    <span><img class="icon" src="images/forum/folder_new.gif" width="32" height="23" alt="">新文章</span>
+                    <span><img class="icon" src="images/forum/folder.gif" width="32" height="23" alt="">没有新文章</span>
+                    <span><img class="icon" src="images/forum/folder_lock.gif" width="32" height="23" alt="">版面已被锁定</span>
+                </div>
+            </div>
+            <!--/forum-bt-->
+        </div>
+    </div>
+    <div class="clr"></div>
+    <div id="footer">
+        <div id="footer-nav">
+            <div class="footer-left">
+                <div class="foot-nav">
+                    <a href="/estudy/help/helpCenter.action">帮助中心</a> | <a href="/estudy/index/homePage/homePage.action?typeIndex=2" target="_blank">作者声明</a> | <a href="/estudy/index/homePage/homePage.action?typeIndex=3" target="_blank">联系我们</a> | <a href="/estudy/expertUser/login.action">专家账户登录</a> | <a href="/estudy/estudyLogin.action?loginType=5">后台管理</a>
+                </div>
+                <div class="foot-nav">
+                    <a href="">浙江省教育厅</a>
+                    <a href="">浙江省教育技术中心</a>
+                    <a href="">浙江教育资源网</a>
+                    <a href="">浙江职业教育资源网</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <img src="images/footer-logo.png">
+                <p class="banq"><span class="txt">CopyRight 2012-2015 版权所有</span>
+                    <a href="http://www.cnzz.com/stat/website.php?web_id=4497361" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic.gif"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="cbbfixed">
+        <a class="cweixin cbbtn" href="javascript:void;">
+            <span class="weixin-icon"></span>
+            <div></div>
+        </a>
+        <a id="gotop" class="cbbtn" href="">
+            <span class="yy-icon yy-gt" style="display:none;"></span>
+        </a>
+    </div>
+    <!--点击反馈弹出层-->
+    <div class="mask"></div>
+    <div class="qtip">
+        <div class="questionnaire">
+            <div class="q_warp">
+                <p class="q_title">意见反馈<span class="closed"></span></p>
+                <div class="q_content" style="height: 256px;">
+                    <div id="info">
+                        <p class="q_chexkbox">
+                            <span><input type="checkbox">功能使用 </span>
+                            <span><input type="checkbox">界面美观 </span>
+                            <span><input type="checkbox">后台管理</span>
+                            <span><input type="checkbox">其他</span>
+                        </p>
+                        <p class="q_textarea">
+                            <textarea class="text" border-style="solid" value="" id="textarea" onfocus="if(value=='请在这里输入您的宝贵建议...') {value=' '}">请在这里输入您的宝贵建议...</textarea>
+                        </p>
+                    </div>
+                    <input type="button" value="提交" class="input-btn05 mt20" id="close_button">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--点击反馈弹出层结束-->
+    <!--=E footer end-->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/coursemyscript.js"></script>
+    <script type="text/javascript" src="js/forum.js"></script>
+</body>
+
+</html>

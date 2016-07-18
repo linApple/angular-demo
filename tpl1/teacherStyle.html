@@ -1,0 +1,238 @@
+<div id="container" class="k-container">
+    <div class="xteacher-content">
+        <div class="x-box">
+            <div class="op-bg">
+                <div class="f-left t-selectoption">
+                    <span id="regionSpan1">
+                             <select id="regions1" onchange="getAllSubSchool(this.value)"><option value="">==请选择==</option><option value="330000" title="省直属">省直属</option><option value="330100" title="杭州市">杭州市</option><option value="330200" title="宁波市">宁波市</option><option value="330300" title="温州市">温州市</option><option value="330400" title="嘉兴市">嘉兴市</option><option value="330500" title="湖州市">湖州市</option><option value="330600" title="绍兴市">绍兴市</option><option value="330700" title="金华市">金华市</option><option value="330800" title="衢州市">衢州市</option><option value="330900" title="舟山市">舟山市</option><option value="331000" title="台州市">台州市</option><option value="331100" title="丽水市">丽水市</option></select>
+                          </span>
+                </div>
+                <div class="search">
+                    <input type="text" value="请输入单位名称..." id="courseName" name="courseName" class="input-txt1 mr-5">
+                    <input type="text" value="请输入课程名称..." id="teacherName" name="teacherName" class="input-txt1 mr-5">
+                    <input type="text" id="searchCourseName" name="course.courseName" value="请输入教师名称..." class="input-txt">
+                    <input type="button" value="搜索" class="input-btn">
+                    <div class="clr"></div>
+                </div>
+                <p class="t-searchs">
+                    <a id="spellHref " href="#" onclick="searchTeacher(' ', 'spell')" class="active">全部</a>
+                    <a id="spellHrefa" href="#" onclick="searchTeacher('a', 'spell')">A</a>
+                    <a id="spellHrefb" href="#" onclick="searchTeacher('b', 'spell')">B</a>
+                    <a id="spellHrefc" href="#" onclick="searchTeacher('c', 'spell')">C</a>
+                    <a id="spellHrefd" href="#" onclick="searchTeacher('d', 'spell')">D</a>
+                    <a id="spellHrefe" href="#" onclick="searchTeacher('e', 'spell')">E</a>
+                    <a id="spellHreff" href="#" onclick="searchTeacher('f', 'spell')">F</a>
+                    <a id="spellHrefg" href="#" onclick="searchTeacher('g', 'spell')">G</a>
+                    <a id="spellHrefh" href="#" onclick="searchTeacher('h', 'spell')">H</a>
+                    <a id="spellHrefi" href="#" onclick="searchTeacher('i', 'spell')">I</a>
+                    <a id="spellHrefj" href="#" onclick="searchTeacher('j', 'spell')">J</a>
+                    <a id="spellHrefk" href="#" onclick="searchTeacher('k', 'spell')">K</a>
+                    <a id="spellHrefl" href="#" onclick="searchTeacher('l', 'spell')">L</a>
+                    <a id="spellHrefm" href="#" onclick="searchTeacher('m', 'spell')">M</a>
+                    <a id="spellHrefn" href="#" onclick="searchTeacher('n', 'spell')">N</a>
+                    <a id="spellHrefo" href="#" onclick="searchTeacher('o', 'spell')">O</a>
+                    <a id="spellHrefp" href="#" onclick="searchTeacher('p', 'spell')">P</a>
+                    <a id="spellHrefq" href="#" onclick="searchTeacher('q', 'spell')">Q</a>
+                    <a id="spellHrefr" href="#" onclick="searchTeacher('r', 'spell')">R</a>
+                    <a id="spellHrefs" href="#" onclick="searchTeacher('s', 'spell')">S</a>
+                    <a id="spellHreft" href="#" onclick="searchTeacher('t', 'spell')">T</a>
+                    <a id="spellHrefu" href="#" onclick="searchTeacher('u', 'spell')">U</a>
+                    <a id="spellHrefv" href="#" onclick="searchTeacher('v', 'spell')">V</a>
+                    <a id="spellHrefw" href="#" onclick="searchTeacher('w', 'spell')">W</a>
+                    <a id="spellHrefx" href="#" onclick="searchTeacher('x', 'spell')">X</a>
+                    <a id="spellHrefy" href="#" onclick="searchTeacher('y', 'spell')">Y</a>
+                    <a id="spellHrefz" href="#" onclick="searchTeacher('z', 'spell')">Z</a>
+                </p>
+                <div class="tips-list" id="tips-list">
+                    <a id="courseTypeHref" href="javascript:">全部</a>
+                    <a id="courseTypeHref01" href="javascript:" class="on">知识拓展</a>
+                    <a id="courseTypeHref02" href="javascript:" class="current on">职业技能</a>
+                    <a id="courseTypeHref03" href="javascript:" class="on">兴趣特长</a>
+                    <a id="courseTypeHref04" href="javascript:" class="on">综合实践</a>
+                </div>
+                <div class="tips-list seondfl">
+                    <a href="javascript:" class="current">全部</a>
+                    <a href="javascript:;">美术</a>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">社会</a>
+                    <a href="javascript:;">体育</a>
+                    <a href="javascript:;">保健</a>
+                    <a href="javascript:;">心理</a>
+                    <a href="javascript:;">生物</a>
+                    <a href="javascript:;">数学</a>
+                    <a href="javascript:;">物理</a>
+                    <a href="javascript:;">化学</a>
+                    <a href="javascript:;">语文</a>
+                    <a href="javascript:;">英语</a>
+                </div>
+            </div>
+            <div id="teacherListDIV" class="loader">
+                <ul class="teacher-list">
+                    <li class="b-none">
+                        <div class="img">
+                            <a href="#">
+                                <img src="images/listimg01.jpg" title="点击查看教师详细页面" width="100" height="125">
+                            </a>
+                        </div>
+                        <div class="teacher-info">
+                            <p class="name">
+                                <a href="javascript:">文英</a>
+                            </p>
+                            <p title="时装设计">
+                                <span title="时装设计">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科：</span> 时装设计
+                            </p>
+                            <p title="浙江纺织服装职业技术学院">
+                                <span title="浙江纺织服装职业技术学院">所在单位：</span> 浙江纺织服装职...
+                            </p>
+                            <p class="des"><span>个人介绍：</span>文英，服装专业教师，讲师，技师。近十年来一直从事一线教学工作，潜...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <a href="#">
+                                <img src="images/listimg01.jpg" title="点击查看教师详细页面" width="100" height="125">
+                            </a>
+                        </div>
+                        <div class="teacher-info">
+                            <p class="name">
+                                <a href="javascript:">文英</a>
+                            </p>
+                            <p title="时装设计">
+                                <span title="时装设计">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科：</span> 时装设计
+                            </p>
+                            <p title="浙江纺织服装职业技术学院">
+                                <span title="浙江纺织服装职业技术学院">所在单位：</span> 浙江纺织服装职...
+                            </p>
+                            <p class="des"><span>个人介绍：</span>文英，服装专业教师，讲师，技师。近十年来一直从事一线教学工作，潜...</p>
+                        </div>
+                    </li>
+                    <li class="b-none">
+                        <div class="img">
+                            <a href="#">
+                                <img src="images/listimg01.jpg" title="点击查看教师详细页面" width="100" height="125">
+                            </a>
+                        </div>
+                        <div class="teacher-info">
+                            <p class="name">
+                                <a href="javascript:">文英</a>
+                            </p>
+                            <p title="时装设计">
+                                <span title="时装设计">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科：</span> 时装设计
+                            </p>
+                            <p title="浙江纺织服装职业技术学院">
+                                <span title="浙江纺织服装职业技术学院">所在单位：</span> 浙江纺织服装职...
+                            </p>
+                            <p class="des"><span>个人介绍：</span>文英，服装专业教师，讲师，技师。近十年来一直从事一线教学工作，潜...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <a href="#">
+                                <img src="images/listimg01.jpg" title="点击查看教师详细页面" width="100" height="125">
+                            </a>
+                        </div>
+                        <div class="teacher-info">
+                            <p class="name">
+                                <a href="javascript:">文英</a>
+                            </p>
+                            <p title="时装设计">
+                                <span title="时装设计">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科：</span> 时装设计
+                            </p>
+                            <p title="浙江纺织服装职业技术学院">
+                                <span title="浙江纺织服装职业技术学院">所在单位：</span> 浙江纺织服装职...
+                            </p>
+                            <p class="des"><span>个人介绍：</span>文英，服装专业教师，讲师，技师。近十年来一直从事一线教学工作，潜...</p>
+                        </div>
+                    </li>
+                    <li class="b-none">
+                        <div class="img">
+                            <a href="#">
+                                <img src="images/listimg01.jpg" title="点击查看教师详细页面" width="100" height="125">
+                            </a>
+                        </div>
+                        <div class="teacher-info">
+                            <p class="name">
+                                <a href="javascript:">文英</a>
+                            </p>
+                            <p title="时装设计">
+                                <span title="时装设计">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科：</span> 时装设计
+                            </p>
+                            <p title="浙江纺织服装职业技术学院">
+                                <span title="浙江纺织服装职业技术学院">所在单位：</span> 浙江纺织服装职...
+                            </p>
+                            <p class="des"><span>个人介绍：</span>文英，服装专业教师，讲师，技师。近十年来一直从事一线教学工作，潜...</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="page">
+                    <div id="page_courseCenter-search.action?course.courseName=&amp;course.courseTypeCode=&amp;course.order=1&amp;course.display=1&amp;course.courseLevel=00" style="display: inline;">共1073条 &nbsp;第1/108页&nbsp;<span class="disabled">首页</span>&nbsp;<span class="disabled">上一页</span>&nbsp;<a href="javascript:void(0)" onclick="pages.formSubmit(&quot;courseCenter-search.action?course.courseName=&amp;course.courseTypeCode=&amp;course.order=1&amp;course.display=1&amp;course.courseLevel=00&quot;,2)">下一页</a>&nbsp;<a href="javascript:void(0)" onclick="pages.formSubmit(&quot;courseCenter-search.action?course.courseName=&amp;course.courseTypeCode=&amp;course.order=1&amp;course.display=1&amp;course.courseLevel=00&quot;,108)">末页</a>&nbsp;第
+                        <input id="pages_pagepage_form" name="pages_page" type="text" class="page" style="width:20px" onkeypress="pages.goURL('courseCenter-search.action?course.courseName=&amp;course.courseTypeCode=&amp;course.order=1&amp;course.display=1&amp;course.courseLevel=00',0,event,this)" value="1">页
+                        <input type="hidden" name="pageSize" id="pageSize" value="10" size="2" style="width:20px" onkeypress="pages.goURL('courseCenter-search.action?course.courseName=&amp;course.courseTypeCode=&amp;course.order=1&amp;course.display=1&amp;course.courseLevel=00',0,event,this)"><a href="javascript:void(0)" class="go" onclick="pages.goURL('courseCenter-search.action?course.courseName=&amp;course.courseTypeCode=&amp;course.order=1&amp;course.display=1&amp;course.courseLevel=00',1,event)">跳转</a>
+                        <input type="text" style="display:none">
+                    </div>
+                    <form id="page_form" name="page_form" method="post">
+                        <input type="hidden" name="pageIndex" value="1">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="xkccenter-slider">
+        <div class="tab-ml">
+            <div class="tt">
+                <span class="title">综合排行</span>
+                <div class="tab-tip">
+                    教师 / 活跃度
+                </div>
+            </div>
+            <ul class="store-list tab-box">
+                <li><span>综合实践</span><a href="" title="" target="_blank">温州兴市</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">中国古代的化学应用</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">杭州市兴</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">绍兴市兴</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">台州市兴兴</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">嘉兴市兴兴兴兴兴</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">舟山兴兴市</a></li>
+                <li class="last"><span>79</span><a href="" title="" target="_blank">金华市</a></li>
+            </ul>
+        </div>
+        <div class="xline"></div>
+        <div class="tab-ml">
+            <div class="tt">
+                <span class="title">热门课程排行</span>
+                <div class="tab-tip">
+                    课程名称 / 报名人数
+                </div>
+            </div>
+            <ul class="store-list tab-box">
+                <li><span>综合实践</span><a href="" title="" target="_blank">温州兴市</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">中国古代的化学应用</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">杭州市兴</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">绍兴市兴</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">台州市兴兴</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">嘉兴市兴兴兴兴兴</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">舟山兴兴市</a></li>
+                <li class="last"><span>79</span><a href="" title="" target="_blank">金华市</a></li>
+            </ul>
+        </div>
+        <div class="xline"></div>
+        <div class="tab-ml">
+            <div class="tt">
+                <span class="title">最受关注课程</span>
+                <div class="tab-tip">
+                    课程名称 / 点击量
+                </div>
+            </div>
+            <ul class="store-list tab-box">
+                <li><span>综合实践</span><a href="" title="" target="_blank">温州兴市</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">中国古代的化学应用</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">杭州市兴</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">绍兴市兴</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">台州市兴兴</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">嘉兴市兴兴兴兴兴</a></li>
+                <li><span>综合实践</span><a href="" title="" target="_blank">舟山兴兴市</a></li>
+                <li class="last"><span>79</span><a href="" title="" target="_blank">金华市</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

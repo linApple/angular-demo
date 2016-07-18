@@ -1,0 +1,54 @@
+<div id="heple-container" class="s-container">
+    <!--<div class="crumb">位置导航 您现在的位置: <a href="/estudy/estudyIndex.action">首页</a>&gt; <span>帮助中心</span></div>-->
+    <form name="searchForm" id="searchForm" action="helpCenter-search.action" method="post">
+        <div class="help-dt">
+            <div class="le"></div>
+            <div class="con">
+                <input type="text" value="" class="input-txt" id="searchContent" name="searchContent">
+                <input type="button" value="" class="input-btn" onclick="search()">
+            </div>
+            <div class="ri"></div>
+        </div>
+    </form>
+    <div class="help-slder">
+        <p class="dt"></p>
+        <div class="menu-grid">
+        
+            <p class="dt">常见问题</p>
+            <ul style="display: block;">
+                <li class="active"><a href="javascript:showQuestion('faqQuestion01.html');">常见问题</a></li>
+                <li class=""><a href="elective/word/student.doc">学生操作手册</a></li>
+                <li class=""><a href="elective/word/teacher.doc">教师操作手册</a></li>
+            </ul>
+        </div>
+        <div class="menu-grid">
+        
+            <p class="dt dt1">学生操作指南</p>
+            <ul style="display: none;">
+                <li><a href="javascript:showQuestion('stuQuestion01.html');">注册用户类问题</a></li>
+                <li><a href="javascript:showQuestion('stuQuestion02.html');">学习管理类问题</a></li>
+                <li><a href="javascript:showQuestion('stuQuestion03.html');">答疑交流类问题</a></li>
+            </ul>
+        </div>
+        <div class="menu-grid">
+        
+            <p class="dt dt1">教师操作指南</p>
+            <ul style="display: none;">
+                <li><a href="javascript:showQuestion('teaQuestion01.html');">账号注册类问题</a></li>
+                <li><a href="javascript:showQuestion('teaQuestion02.html');">课程学习类问题</a></li>
+                <li><a href="javascript:showQuestion('teaQuestion03.html');">答疑交流类问题</a></li>
+            </ul>
+        </div>
+        <p class="bt"></p>
+    </div>
+    <div class="help-content loader" id="center" href="elective/reply/faqQuestion01-01.html">
+        <p class="dt">1.学生和老师如何获取用户名密码？学生忘记密码怎么办？</p>
+        <div class="box">
+            <p class="q">学生和老师如何获取用户名密码?学生忘记密码怎么办？</p>
+            <p class="a"><span>答：</span>学生直接在选修课网络平台上“注册”取得用户名密码。教师的用户名和密码与“浙江省教师培训管理平台”（pxglpt.zjedu.gov.cn）一致，无需重新注册。无法登录或忘记密码，请联系“浙江省教师培训管理平台”学校管理员获取用户名和密码。</p>
+            <br>
+            <p class="a">学生如果忘记密码，可以找回密码，通过验证身份信息重新设置密码：</p>
+            <p class="t-img"><img src="elective/images/faqQuestion01-01.jpg"></p>
+        </div>
+    </div>
+</div>
